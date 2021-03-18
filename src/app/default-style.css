@@ -1,0 +1,61 @@
+:root {
+  --main-color: #303030;
+  --sec-color: #e4e4e4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-color: #e4e4e4;
+    --sec-color: #303030;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--main-color);
+  user-select: none;
+}
+
+body {
+  background-color: var(--sec-color);
+  padding: 20px;
+}
+
+h1 {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+button {
+  background-color: var(--sec-color);
+  border: 1px solid var(--main-color);
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+}
+
+button:hover {
+  outline: none !important;
+  color: var(--sec-color);
+  background-color: var(--main-color);
+}
+
+button:focus {
+  outline: none !important;
+}
+
+button:active {
+  outline: none !important;
+  font-size: 12px;
+}
+
+input {
+  width: 75px;
+  background-color: var(--sec-color);
+  border: 1px solid var(--main-color);
+  outline: none;
+  text-align: center;
+}
